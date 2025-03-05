@@ -3,7 +3,7 @@ import java.util.List;
 public class Programmer {
         private String name;
         private String city;
-        private List<Task> tasks;
+        private final List<Task> tasks;
 
         public Programmer(String name, String city, List<Task> tasks) {
             this.name = name;
@@ -18,7 +18,6 @@ public class Programmer {
         public void setName(String name) {
             this.name = name;
         }
-
         public String getCity() {
             return city;
         }
